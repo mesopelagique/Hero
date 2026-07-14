@@ -1,0 +1,467 @@
+{
+	"_method_": {},
+	"cs.hero": {
+		"ElementTransition": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"ElementState": {
+			"new()": {
+				"Syntax": "**.new**( *name* : Text )",
+				"Params": [
+					[
+						"name",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		},
+		"ElementAnimation": {
+			"new()": {
+				"Syntax": "**.new**( *manager* : cs.hero.ElementTransition; *target* : Text )",
+				"Params": [
+					[
+						"manager",
+						"cs.hero.ElementTransition",
+						"->"
+					],
+					[
+						"target",
+						"Text",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"ElementTransition": {
+		"get isRunning()": {
+			"Syntax": "**.get isRunning**() : Boolean",
+			"Params": [
+				[
+					"",
+					"Boolean",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"onTimer()": {
+			"Syntax": "**.onTimer**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"capture()": {
+			"Syntax": "**.capture**( *names* : Collection ) : Collection",
+			"Params": [
+				[
+					"names",
+					"Collection",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"heroFrom()": {
+			"Syntax": "**.heroFrom**( *snapshot* : Collection; *options* : Object ) : Collection",
+			"Params": [
+				[
+					"snapshot",
+					"Collection",
+					"->"
+				],
+				[
+					"options",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"morph()": {
+			"Syntax": "**.morph**( *fromName* : Text; *toName* : Text; *options* : Object ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"fromName",
+					"Text",
+					"->"
+				],
+				[
+					"toName",
+					"Text",
+					"->"
+				],
+				[
+					"options",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"share()": {
+			"Syntax": "**.share**( *fromName* : Text; *toName* : Text; *options* : Object ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"fromName",
+					"Text",
+					"->"
+				],
+				[
+					"toName",
+					"Text",
+					"->"
+				],
+				[
+					"options",
+					"Object",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"stop()": {
+			"Syntax": "**.stop**( *jumpToEnd* : Boolean )",
+			"Params": [
+				[
+					"jumpToEnd",
+					"Boolean",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"animate()": {
+			"Syntax": "**.animate**( *target* : Text ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"target",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"timerTicks": {
+			"Syntax": "timerTicks : Integer"
+		},
+		"animations": {
+			"Syntax": "animations : Collection"
+		}
+	},
+	"ElementState": {
+		"apply()": {
+			"Syntax": "**.apply**( *name* : Text ) : cs.hero.ElementState",
+			"Params": [
+				[
+					"name",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementState",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"lerp()": {
+			"Syntax": "**.lerp**( *target* : cs.hero.ElementState; *t* : Real; *colorMode* : Text ) : cs.hero.ElementState",
+			"Params": [
+				[
+					"target",
+					"cs.hero.ElementState",
+					"->"
+				],
+				[
+					"t",
+					"Real",
+					"->"
+				],
+				[
+					"colorMode",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementState",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get height()": {
+			"Syntax": "**.get height**() : Real",
+			"Params": [
+				[
+					"",
+					"Real",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"get width()": {
+			"Syntax": "**.get width**() : Real",
+			"Params": [
+				[
+					"",
+					"Real",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"copy()": {
+			"Syntax": "**.copy**() : cs.hero.ElementState",
+			"Params": [
+				[
+					"",
+					"cs.hero.ElementState",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"capture()": {
+			"Syntax": "**.capture**() : cs.hero.ElementState",
+			"Params": [
+				[
+					"",
+					"cs.hero.ElementState",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"cornerRadius": {
+			"Syntax": "cornerRadius : Real"
+		},
+		"backgroundColor": {
+			"Syntax": "backgroundColor : Integer"
+		},
+		"fontSize": {
+			"Syntax": "fontSize : Real"
+		},
+		"bottom": {
+			"Syntax": "bottom : Real"
+		},
+		"right": {
+			"Syntax": "right : Real"
+		},
+		"foregroundColor": {
+			"Syntax": "foregroundColor : Integer"
+		},
+		"top": {
+			"Syntax": "top : Real"
+		},
+		"left": {
+			"Syntax": "left : Real"
+		},
+		"visible": {
+			"Syntax": "visible : Boolean"
+		},
+		"type": {
+			"Syntax": "type : Integer"
+		},
+		"name": {
+			"Syntax": "name : Text"
+		}
+	},
+	"ElementAnimation": {
+		"by()": {
+			"Syntax": "**.by**( *dx* : Real; *dy* : Real ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"dx",
+					"Real",
+					"->"
+				],
+				[
+					"dy",
+					"Real",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"start()": {
+			"Syntax": "**.start**() : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"easing()": {
+			"Syntax": "**.easing**( *name* : Text ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"name",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"then()": {
+			"Syntax": "**.then**( *callback* : 4D.Function ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"callback",
+					"4D.Function",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"delay()": {
+			"Syntax": "**.delay**( *ms* : Real ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"ms",
+					"Real",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"duration()": {
+			"Syntax": "**.duration**( *ms* : Real ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"ms",
+					"Real",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"to()": {
+			"Syntax": "**.to**( *destination* : Variant ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"destination",
+					"Variant",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"from()": {
+			"Syntax": "**.from**( *source* : Variant ) : cs.hero.ElementAnimation",
+			"Params": [
+				[
+					"source",
+					"Variant",
+					"->"
+				],
+				[
+					"",
+					"cs.hero.ElementAnimation",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"durationMs": {
+			"Syntax": "durationMs : Real"
+		},
+		"delayMs": {
+			"Syntax": "delayMs : Real"
+		},
+		"colorMode": {
+			"Syntax": "colorMode : Text"
+		},
+		"animateColors": {
+			"Syntax": "animateColors : Boolean"
+		},
+		"onComplete": {
+			"Syntax": "onComplete : 4D.Function"
+		},
+		"animateFontSize": {
+			"Syntax": "animateFontSize : Boolean"
+		},
+		"animateCornerRadius": {
+			"Syntax": "animateCornerRadius : Boolean"
+		},
+		"toState": {
+			"Syntax": "toState : cs.hero.ElementState"
+		},
+		"fromState": {
+			"Syntax": "fromState : cs.hero.ElementState"
+		},
+		"easingName": {
+			"Syntax": "easingName : Text"
+		},
+		"target": {
+			"Syntax": "target : Text"
+		}
+	}
+}

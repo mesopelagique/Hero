@@ -1,0 +1,86 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onTimer"
+	],
+	"windowTitle": "MyApp — Home",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"avatar": {
+					"type": "rectangle",
+					"left": 20,
+					"top": 20,
+					"width": 44,
+					"height": 44,
+					"borderRadius": 22,
+					"fill": "#FF8C42",
+					"stroke": "#C05621"
+				},
+				"userName": {
+					"type": "text",
+					"text": "John Doe",
+					"left": 74,
+					"top": 32,
+					"width": 200,
+					"height": 20,
+					"fontSize": 15
+				},
+				"header": {
+					"type": "text",
+					"text": "MyApp",
+					"top": 32,
+					"left": 440,
+					"width": 140,
+					"height": 20,
+					"fontSize": 13,
+					"textAlign": "right"
+				},
+				"welcome": {
+					"type": "text",
+					"text": "Welcome back, John!",
+					"left": 20,
+					"top": 110,
+					"width": 400,
+					"height": 40,
+					"fontSize": 24
+				},
+				"body": {
+					"type": "text",
+					"text": "This screen is a different form: on load, every object whose name matches the snapshot captured by the previous form (avatar, userName, header) flies from its old place to its natural one.",
+					"left": 20,
+					"top": 160,
+					"width": 540,
+					"height": 60,
+					"fontSize": 12,
+					"stroke": "#666666"
+				},
+				"buttonLogout": {
+					"type": "button",
+					"text": "Log out",
+					"left": 480,
+					"top": 406,
+					"width": 100,
+					"height": 30,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"method": "method.4dm"
+}

@@ -1,0 +1,90 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onTimer"
+	],
+	"windowTitle": "MyApp — Sign in",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"header": {
+					"type": "text",
+					"text": "MyApp",
+					"top": 40,
+					"left": 20,
+					"width": 560,
+					"height": 36,
+					"fontSize": 24,
+					"textAlign": "center"
+				},
+				"avatar": {
+					"type": "rectangle",
+					"left": 260,
+					"top": 120,
+					"width": 80,
+					"height": 80,
+					"borderRadius": 40,
+					"fill": "#4DA3FF",
+					"stroke": "#2B6CB0"
+				},
+				"userName": {
+					"type": "text",
+					"text": "John Doe",
+					"left": 225,
+					"top": 215,
+					"width": 150,
+					"height": 20,
+					"fontSize": 13,
+					"textAlign": "center"
+				},
+				"hint": {
+					"type": "text",
+					"text": "Sign in to continue",
+					"left": 225,
+					"top": 245,
+					"width": 150,
+					"height": 16,
+					"fontSize": 11,
+					"stroke": "#888888",
+					"textAlign": "center"
+				},
+				"buttonSignIn": {
+					"type": "button",
+					"text": "Sign in",
+					"left": 250,
+					"top": 300,
+					"width": 100,
+					"height": 30,
+					"events": [
+						"onClick"
+					]
+				},
+				"caption": {
+					"type": "text",
+					"text": "Shared element transition across two forms — elements are matched by name",
+					"top": 420,
+					"left": 20,
+					"width": 560,
+					"height": 16,
+					"fontSize": 11,
+					"stroke": "#888888",
+					"textAlign": "center"
+				}
+			}
+		}
+	],
+	"method": "method.4dm"
+}
