@@ -13,7 +13,7 @@
 		"onClick",
 		"onUnload"
 	],
-	"windowTitle": "FormElementTransition — playground",
+	"windowTitle": "Hero — playground",
 	"destination": "detailScreen",
 	"pages": [
 		{

@@ -1,4 +1,4 @@
-# FormElementTransition
+# Hero
 
 **Shared Element Transitions for 4D forms.**
 
@@ -20,7 +20,7 @@ A **4D component** exposing three classes under the `cs.hero` namespace, driven 
 
 ## Setup
 
-1. Add **FormElementTransition** to your project's dependencies (it is a component); its classes are exposed under the `cs.hero` namespace.
+1. Add **Hero** to your project's dependencies (it is a component); its classes are exposed under the `cs.hero` namespace.
 2. Enable the **On Timer** event on your form.
 3. In the form method:
 
