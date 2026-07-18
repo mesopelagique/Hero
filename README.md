@@ -77,6 +77,20 @@ End if
 - **`DEMO`** — single form: each click on **Toggle** plays a hero transition between a small blue card and a large orange one (position, size, corner radius and colors interpolated), while the title's font size tweens along.
 - **`DEMO_TwoForms`** — two real forms in the same window: **Sign in** captures the avatar / user name / header states and the home form makes them fly to their new place on load; **Log out** plays the reverse flight.
 
+## See it put to work
+
+The demos above show the API. For the fun version, **[PlayGallery](https://github.com/mesopelagique/PlayGallery)** loads every project built on Hero as a component and launches them from one place:
+
+| | |
+|---|---|
+| [ArcanoidGame](https://github.com/mesopelagique/ArcanoidGame) | Brick breaker — between two bounces a ball travels a straight line at constant speed, which *is* a linear tween, so the ball is a chain of them |
+| [2048](https://github.com/mesopelagique/2048) · [Taquin](https://github.com/mesopelagique/Taquin) | Tiles hopping between known cells — the engine's native tongue |
+| [Puissance4D](https://github.com/mesopelagique/Puissance4D) | Connect Four — the disc's fall is one tween, `easeOutBounce` lands it |
+| [Memory4D](https://github.com/mesopelagique/Memory4D) | The card flip: a matched-geometry move spelled out by hand |
+| [EscapingButton](https://github.com/mesopelagique/EscapingButton) | An OK button that will not be clicked — each escape is one easing curve in a costume |
+| [ActivityIndicator](https://github.com/mesopelagique/ActivityIndicator) | Eight spinners ported from IBAnimatable, each a loop of tweens |
+| [MatrixRain](https://github.com/mesopelagique/MatrixRain) | Nothing moves at all: the whole storm is colour being interpolated |
+
 ## Notes & limitations
 
 - One `ElementTransition` instance per form; all calls must be made **from that form's context** (the engine uses `SET TIMER`, which targets the current form), and the `On Timer` event must be enabled.
