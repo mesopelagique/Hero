@@ -68,6 +68,10 @@ If (Form.hero#Null)
 End if
 ```
 
+## Recipes
+
+Short copy-paste patterns in the [**cookbook**](Documentation/Recipes.md) — starting with an [**error shake**](Documentation/Recipes.md#error-shake) (the "bad password" wobble): displace the field and let `easeOutElastic` spring it back, in one tween.
+
 ## Demos
 
 - **`DEMO_Playground`** — every knob, in one form. Click **Run**: the twelve [easing curves](Documentation/Classes/ElementAnimation.md#easing) race side by side over the same distance and the same duration, so you can actually *see* the difference; two swatches take the same blue → orange journey in `rgb` and in `hsv`; position, size, `cornerRadius` and `fontSize` each get a demo; and six dots stagger with `.delay()`. Click **Back**: the state `capture()`d on load *is* the destination — `.to($elementState)`, no coordinates written anywhere.
